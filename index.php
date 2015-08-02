@@ -456,22 +456,28 @@
                         <h2 class="part-title animate-fadeIn"><span class="thin">My</span> clients</h2>
                         <div class="separator"></div>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInLeft">
-                        <img src="img/logos/spafax.png" alt="Spafax logo">
+                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInLeft">
+                        <img src="img/logos/over-graph.png" alt="over-graph logo">
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInDown">
-                        <img src="img/logos/enroute.png" alt="enRoute logo">
+                        <img src="img/logos/909c.png" alt="909c logo">
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInRight">
-                        <img src="img/logos/bombardier.png" alt="Bombardier logo">
+                        <img src="img/logos/spafax.png" alt="Spafax logo">
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInLeft">
-                        <img src="img/logos/monogram.png" alt="Ge Monogram logo">
+                        <img src="img/logos/enroute.png" alt="enRoute logo">
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInUp">
-                        <img src="img/logos/mauffette.png" alt="Claude Mauffette logo">
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInDown">
+                        <img src="img/logos/bombardier.png" alt="Bombardier logo">
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInRight">
+                        <img src="img/logos/monogram.png" alt="Ge Monogram logo">
+                    </div>
+                    <div class="logo col-xs-12 col-sm-6 col-md-6 animate-fadeInLeft">
+                        <img src="img/logos/mauffette.png" alt="Claude Mauffette logo">
+                    </div>
+                    <div class="logo col-xs-12 col-sm-6 col-md-6 animate-fadeInRight">
                         <img src="img/logos/maison.png" alt="Maison en espagne logo">
                     </div>
                 </div>
