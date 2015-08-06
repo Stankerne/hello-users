@@ -457,28 +457,28 @@
                         <div class="separator"></div>
                     </div>
                      <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInLeft">
-                        <img src="img/logos/over-graph.png" alt="over-graph logo">
+                       <a href="http://over-graph.com" target="_blank"><img src="img/logos/over-graph.png" alt="over-graph logo"></a>
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInDown">
-                        <img src="img/logos/909c.png" alt="909c logo">
+                        <a href="http://909c.com" target="_blank"><img src="img/logos/909c.png" alt="909c logo"></a>
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInRight">
-                        <img src="img/logos/spafax.png" alt="Spafax logo">
+                        <a href="http://spafax.com" target="_blank"><img src="img/logos/spafax.png" alt="Spafax logo"></a>
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInLeft">
-                        <img src="img/logos/enroute.png" alt="enRoute logo">
+                        <a href="http://enroute.aircanada.com" target="_blank"><img src="img/logos/enroute.png" alt="enRoute logo"></a>
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInDown">
-                        <img src="img/logos/bombardier.png" alt="Bombardier logo">
+                        <a href="http://bombardier.com" target="_blank"><img src="img/logos/bombardier.png" alt="Bombardier logo"></a>
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-4 animate-fadeInRight">
-                        <img src="img/logos/monogram.png" alt="Ge Monogram logo">
+                        <a href="http://909c.com" target="_blank"><img src="img/logos/monogram.png" alt="Ge Monogram logo"></a>
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-6 animate-fadeInLeft">
-                        <img src="img/logos/mauffette.png" alt="Claude Mauffette logo">
+                        <a href="http://claudemauffette.com" target="_blank"><img src="img/logos/mauffette.png" alt="Claude Mauffette logo"></a>
                     </div>
                     <div class="logo col-xs-12 col-sm-6 col-md-6 animate-fadeInRight">
-                        <img src="img/logos/maison.png" alt="Maison en espagne logo">
+                        <a href="http://maison-en-espagne.fr" target="_blank"><img src="img/logos/maison.png" alt="Maison en espagne logo"></a>
                     </div>
                 </div>
             </div>

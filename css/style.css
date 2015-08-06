@@ -947,7 +947,9 @@ width: 100%;
 	max-width: 250px;
 	max-height: 100px
 }
-
+#clients .logo img:hover{
+	opacity: 0.8;
+}
 #clients .logo{
 	margin-bottom: 60px;
 }
