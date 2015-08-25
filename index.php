@@ -593,7 +593,7 @@
                             </div>
                             <div class="method">
                                 <div class="label">A</div>
-                                <div class="details">18 rue Fléchier<br>76600 Le Havre<br>FRANCE</div>
+                                <div class="details">97 rue Manin<br>75019 Paris<br>FRANCE</div>
                             </div>
                         </div>
                     </div>
