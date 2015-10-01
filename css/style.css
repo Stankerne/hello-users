@@ -3,9 +3,82 @@ body {
 	padding: 0;
 	color: #FFF;
 }
+body.deactivate{
+	overflow: hidden ;
+}
+.not-visible{
+	opacity: 0;
+}
+
 .safari.desktop{
   font-family: "Lato";
 }
+#loader{
+	 width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999;
+}
+.loader{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    background-color: rgba(20, 4, 40, 1);
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.7; }
+
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.7; }
+
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+.ball-pulse > div:nth-child(0) {
+  -webkit-animation: scale 0.75s -0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s -0.36s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(1) {
+  -webkit-animation: scale 0.75s -0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s -0.24s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(2) {
+  -webkit-animation: scale 0.75s -0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s -0.12s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(3) {
+  -webkit-animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: inline-block; }
 /*General*/
 	.blue{ color:#00debc; }
 	.white{ color:#fff; }
@@ -87,7 +160,7 @@ body {
 	    -ms-transform: translateY(-50%);
 	    /* transform: translateY(-50%); */
 	}
-	.not-visible{
+	.animated{
 		opacity: 0;
 	}
 	/*buttons*/
@@ -169,6 +242,7 @@ body {
     background-color: rgba(0, 0, 0, 0.76);
     width: 100%;
     z-index: 99999;
+    overflow: scroll;
   }
 
   .menu .container {
@@ -255,13 +329,15 @@ body {
 	  padding: 0;
 	  bottom: 20px;
 	  position: absolute;
-	  right: 0;
+	  right: 10%;
 	  font-size: 20px;
+	  z-index: 99;
   }
   .menu ul.lang > li{
   	display: table-cell;
   	vertical-align: middle;
-  	width: 30px;
+    width: 30px;
+    text-align: center;
   }
   .menu ul.lang > li a{
   	color: white;
@@ -280,7 +356,7 @@ body {
     display: block;
     top: 40px;
     right: 50px;
-    z-index: 999999;
+    z-index: 99999;
     cursor: pointer;
   }
 
@@ -814,6 +890,7 @@ width: 100%;
 }
 #services-header .container{
 	padding: 250px 0;
+   height: calc(100vh - 110px);
 }
 #services-header .container .bg-dark{
 	background-color: rgba(0, 0, 0, 0.65);
@@ -948,7 +1025,8 @@ width: 100%;
 	max-height: 100px
 }
 #clients .logo img:hover{
-	opacity: 0.8;
+	opacity: 0.6;
+	transition: all .3s ease;
 }
 #clients .logo{
 	margin-bottom: 60px;
@@ -997,6 +1075,7 @@ width: 100%;
 #cities{
 	position: relative;
 	background: white;
+	z-index: 2;
 }
 .ch-item {
   width: 100%;
@@ -1212,7 +1291,7 @@ width: 100%;
 	background-color: rgba(20, 4, 40, 0.8);
 }
 #contact .container{
-  margin-bottom: 180px;
+  margin-bottom: 375px;
 }
 #contact h3{
 	margin-bottom: 90px;
@@ -1239,6 +1318,9 @@ width: 100%;
     width: 210px;
 	margin-bottom: 2em;
 }
+.contact-info .method:last-child{
+	width: 170px;
+}
 .contact-info .label {
     display: table-cell;
     vertical-align: middle;
@@ -1259,18 +1341,25 @@ width: 100%;
 	font-size: 14px;
 	line-height: 20px;
 }
-
+.contact-info .details a{
+	color: white;
+}
 #contact ul {
 	padding-left: 0px;
 	list-style-type: none;
 }
+#contact .form{
+	position: relative;z-index: 3;
+}
 #contact input, textarea{
+	position: relative;
 	background: none;
 	padding: 10px;
 	width: 100%;
 	border: solid 1px #FFF;
 	margin-bottom: 20px;
 	max-width: 100%;
+	z-index: 3;
 }
 #contact input:focus, textarea:focus{
 	border:  solid 1px #00debc;
@@ -1321,6 +1410,7 @@ width: 100%;
 	position: relative;
 	background: #fff;
 	padding: 20px;
+	z-index: 1;
 }
 
 #contact-button .container div{
@@ -1335,6 +1425,7 @@ footer{
 	text-align: center;
 	bottom: 0;
 	width: 100%;
+	z-index: 9;
 }
 
 footer p{
@@ -1342,12 +1433,22 @@ footer p{
 	margin-bottom: 0;
 	width: 100%;
 }
+footer p span{
+	font-weight: lighter;
+}
+
+footer img.logo{
+    width: 110px;
+    margin: 0;
+    margin-bottom: 40px;
+    opacity: 1;
+}
 
 footer img{
 	width: 50px;
 	margin:30px 10px 0px 10px;
 }
-footer img:hover{
+footer img:not(.logo):hover{
 	opacity: 0.6;
 }
 
@@ -1501,6 +1602,9 @@ footer img:hover{
 @media only screen and (max-width : 1000px) {
 	#owl .item a {
 		padding-bottom: 30px;
+	}
+	#services-header .container{
+	    height: calc(100vh - 120px);
 	}
 }
 
