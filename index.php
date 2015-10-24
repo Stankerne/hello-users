@@ -69,7 +69,7 @@
             <div id="intro" class="fullpage">
                 <canvas id="animated-cursor"></canvas>
                 <div class="main-title">
-                    <h1>Hello</h1>
+                    <h1>hello</h1>
                     <ul>
                       <li>world <span class="white">!</span></li>
                       <li>users <span class="white">!</span></li>
@@ -379,6 +379,78 @@
                 </div>
             </div>
 
+            <div id="prices">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <h2 class="part-title animated" data-orientation="fadeIn">Price <span class="thin">List</span></h2>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
+                        <div class="price-box-content">
+                            <div class="ribbon ribbon__left-top"><span>Livré en 15 jours</span></div>
+                            <h3>Basique</h3>
+                            <ul>
+                                <li>3 pages</li>
+                                <li>Formulaire de contact</li>
+                                <li>Hebergement non inclus * </li>
+                            </ul>
+                            <h4>In option</h4>
+                            <ul>
+                                <li>3 pages</li>
+                                <li>Formulaire de contact</li>
+                                <li>Hebergement non inclus * </li>
+                            </ul>
+
+                            <div class="ribbon-st">
+                                <h4>À partir de 900</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
+                        <div class="price-box-content">
+                            <div class="ribbon ribbon__left-top"><span>Livré en 30 jours</span></div>
+                            <h3>Basique</h3>
+                            <ul>
+                                <li>3 pages</li>
+                                <li>Formulaire de contact</li>
+                                <li>Hebergement non inclus * </li>                        
+                            </ul>
+                            <div class="ribbon-st">
+                                <h4>À partir de 900</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
+                        <div class="price-box-content">
+                            <h3>Standard</h3>
+                            <ul>
+                                <li>3 pages</li>
+                                <li>Formulaire de contact</li>
+                                <li>Hebergement non inclus * </li>
+
+                                <div class="ribbon-st">
+                                    <h4>À partir de 900</h4>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
+                        <div class="price-box-content">
+                            <h3>Personalisé</h3>
+                            <ul>
+                                <li>3 pages</li>
+                                <li>Formulaire de contact</li>
+                                <li>Hebergement non inclus * </li>
+
+                                <div class="ribbon-st">
+                                    <h4>À partir de 900</h4>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="portfolio">
                 <div class="container">
                     <div class="col-xs-12">
@@ -584,9 +656,8 @@
             </div>   
             
             <div id="contact">
+                <div class='bg-contact'></div>
                 <div class="container">
-                    <!-- particles.js container -->
-                    <div id="particles-js"></div>
 
                     <div class="col-xs-12">
                         <h2 class="part-title animated" data-orientation="fadeIn">Contact</h2>
@@ -670,23 +741,15 @@
 
 
         <script type="text/javascript">
-            $( document ).load(function() {
-                $('body').removeClass('not-visible');
-            });
-
             // Analytics
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})
             (window,document,'script','//www.google-analytics.com/analytics.js','ga');
             ga('create', 'UA-60570212-1', 'auto');
             ga('send', 'pageview');
-
         </script>
         <script src="js/main.js"></script>
         <script src="js/TweenLite.min.js"></script>
         <script src="js/EasePack.min.js"></script>
         <script src="js/animatedCursor.js"></script>
-        <script src="js/device.min.js"></script>
-        <script src="js/cssBrowser.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </body>
 </html>
