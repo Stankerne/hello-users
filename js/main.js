@@ -19,8 +19,46 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
         }
     });
 }
+else{
+   $("html").addClass("mobile");
+}
+
 if(navigator.userAgent.match('CriOS')){
     $("html").addClass("crios");
+}
+//animate onscroll not working on chrome mobile 
+else{
+
+    $('#intro').waypoint(function() {
+        $('.menu.fullpage .categories > li a').removeClass('is-active');
+        $('.menu.fullpage #menu-home a').addClass('is-active');
+    }, { offset: 250 });
+    $('#welcome').waypoint(function() {
+        $('.menu.fullpage .categories > li a').removeClass('is-active');
+        $('.menu.fullpage #menu-services a').addClass('is-active');
+    }, { offset: 250 });
+    $('#portfolio').waypoint(function() {
+        $('.menu.fullpage .categories > li a').removeClass('is-active');
+        $('.menu.fullpage #menu-portfolio a').addClass('is-active');
+    }, { offset: 250 });
+    $('#clients').waypoint(function() {
+        $('.menu.fullpage .categories > li a').removeClass('is-active');
+        $('.menu.fullpage #menu-clients a').addClass('is-active');
+    }, { offset: 250 });
+    $('#aboutme').waypoint(function() {
+        $('.menu.fullpage .categories > li a').removeClass('is-active');
+        $('.menu.fullpage #menu-about a').addClass('is-active');
+    }, { offset: 250 });
+    $('#contact').waypoint(function() {
+        $('.menu.fullpage .categories > li a').removeClass('is-active');
+        $('.menu.fullpage #menu-contact a').addClass('is-active');
+    }, { offset: 250 });
+
+
+    $('.animated').waypoint(function() {
+        var orientation = $(this).attr('data-orientation');
+        $(this).addClass(orientation);
+    }, { offset: 'bottom-in-view' });
 }
 
 
@@ -45,8 +83,10 @@ $('.scrollTo').click( function() {
 $('#hamburger-icon').click(function() {
     $('#hamburger-icon').toggleClass('active');
     $(".menu").fadeToggle();
-    if ($('#total-container').hasClass('blur')) {
-         $('#total-container').removeClass('blur');
+    if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        if ($('#total-container').hasClass('blur')) {
+             $('#total-container').removeClass('blur');
+        }
     }
     if ($(this).hasClass('active')) {           
         $("#menu-home").delay(200).fadeIn();
@@ -55,7 +95,9 @@ $('#hamburger-icon').click(function() {
         $("#menu-clients").delay(800).fadeIn();
         $("#menu-about").delay(1000).fadeIn();
         $("#menu-contact").delay(1200).fadeIn();
-        $('#total-container').addClass('blur');
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $('#total-container').addClass('blur');
+        }
         $('body').addClass('deactivate')
     }
     else{
@@ -70,9 +112,11 @@ $(".menu .categories li a").click(function () {
     $(".menu .categories li a").removeClass("is-active");
     $(this).delay(200).addClass( "is-active" );
     $('#hamburger-icon').delay(1000).toggleClass('active');
-    setTimeout(function () {
-        $("#total-container").removeClass('blur');
-    }, 1400);
+    if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        setTimeout(function () {
+            $("#total-container").removeClass('blur');
+        }, 1400);
+    }
     $("#menu-home").delay(1000).fadeOut();
     $("#menu-services").delay(800).fadeOut();
     $("#menu-portfolio").delay(600).fadeOut();
@@ -80,49 +124,6 @@ $(".menu .categories li a").click(function () {
     $("#menu-about").delay(200).fadeOut();
     $("#menu-contact").fadeOut();
 });
-//animate onscroll not working on chrome mobile 
-if(!navigator.userAgent.match('CriOS')){
-
-    //essayer waypoint en mobile
-}
-
-$('#intro').waypoint(function() {
-    $('.menu.fullpage .categories > li a').removeClass('is-active');
-    $('.menu.fullpage #menu-home a').addClass('is-active');
-}, { offset: 250 });
-$('#welcome').waypoint(function() {
-    $('.menu.fullpage .categories > li a').removeClass('is-active');
-    $('.menu.fullpage #menu-services a').addClass('is-active');
-}, { offset: 250 });
-$('#portfolio').waypoint(function() {
-    $('.menu.fullpage .categories > li a').removeClass('is-active');
-    $('.menu.fullpage #menu-portfolio a').addClass('is-active');
-}, { offset: 250 });
-$('#clients').waypoint(function() {
-    $('.menu.fullpage .categories > li a').removeClass('is-active');
-    $('.menu.fullpage #menu-clients a').addClass('is-active');
-}, { offset: 250 });
-$('#aboutme').waypoint(function() {
-    $('.menu.fullpage .categories > li a').removeClass('is-active');
-    $('.menu.fullpage #menu-about a').addClass('is-active');
-}, { offset: 250 });
-$('#contact').waypoint(function() {
-    $('.menu.fullpage .categories > li a').removeClass('is-active');
-    $('.menu.fullpage #menu-contact a').addClass('is-active');
-}, { offset: 250 });
-
-
-$('.animated').waypoint(function() {
-    var orientation = $(this).attr('data-orientation');
-    $(this).addClass(orientation);
-}, { offset: 550 });
-$('.animated').waypoint(function() {
-    var orientation = $(this).attr('data-orientation');
-    $(this).removeClass(orientation);
-}, { offset: 900 });
-
-
-
 
 var owl = $("#owl");
 owl.owlCarousel({
@@ -155,6 +156,7 @@ $('#services-choices').find('.scrollTo').click(function(){
         $(this).children(".not-active").hide();
         $(this).children(".active").show();
 })
+
 
 $("#error, #success").click(function () {
     $(this).fadeOut();
