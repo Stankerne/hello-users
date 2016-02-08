@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello users !</title>
-        <meta name="description" content="Web development & creative design">
-        <meta property="og:title" content="Hello users !" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://www.hello-users.com" />
-        <meta property="og:image" content="http://hello-users.com/img/backgrounds/bg-social.png" />
+        <title>Hello users ! Web development & creative design </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="Content-Language" content="en">
+        <meta name="Description" content="I'm Stan, a junior web developer in freelance offering website development services that include website development, custom programming, web hosting, SEO and more.">
+        <meta name="Subject" content="Web developement & creative design ">
+        <meta name="Copyright" content="Stanislas kerné">
+        <meta name="Author" content="Stanislas Kerné">
+        <meta name="Publisher" content="Stanislas Kerné">
+        <meta property="og:title" content="HELLO USERS !" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://hello-users.com" />
+        <meta property="og:image" content="http://hello-users.com/img/assets/og-image-en.png" />
+        <meta property="fb:admins" content="604567118"/>
+        <meta property="fb:app_id" content="1648843565390239"/>
+        <meta property="og:description" content="Hey there! I'm Stan, a junior web programmer in freelance offering website development services that include full website development, custom programming, web hosting, SEO and more. Click me to see more!" /> 
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -21,6 +29,23 @@
         <script src="js/isotope.js"></script>
     </head>
     <body onload="setTimeout(function(){ $('#loader').fadeOut( 'slow', function() {}); });">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1648843565390239',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
         <div id="loader">
           <div class="loader">
@@ -43,6 +68,7 @@
                 <ul class="categories">
                     <li id="menu-home"><a class="is-active scrollTo" href="#intro"><span class="text">Home</span></a></li>
                     <li id="menu-services"><a class="scrollTo" href="#welcome"><span class="text">Services</span></a></li>
+                    <li id="menu-portfolio"><a class="scrollTo" href="#prices"><span class="text">Prices</span></a></li>
                     <li id="menu-portfolio"><a class="scrollTo" href="#portfolio"><span class="text">Portfolio</span></a></li>
                     <li id="menu-clients"><a class="scrollTo" href="#clients"><span class="text">Clients</span></a></li>
                     <li id="menu-about"><a class="scrollTo" href="#aboutme"><span class="text">About me</span></a></li>
@@ -343,7 +369,7 @@
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-3 text-center timerWrapper animated" data-orientation="fadeIn">
+                        <div class="col-xs-6 col-sm-6 col-md-3 text-center timerWrapper animated" data-orientation="fadeIn">
                             <img src="img/facts/ideas.png" alt="ideas">
                             <h1>
                                 <span class="timer1">0</span>
@@ -351,7 +377,7 @@
                             <p>Ideas</p>
                         </div>
 
-                        <div class="col-md-3 col-sm-6 col-xs-12 text-center timerWrapper animated" data-orientation="fadeIn">
+                        <div class="col-xs-6 col-sm-6 col-md-3 text-center timerWrapper animated" data-orientation="fadeIn">
                             <img src="img/facts/project.png" alt="ideas">
                             <h1>
                                 <span class="timer2">0</span> +
@@ -360,7 +386,7 @@
                         </div>
 
 
-                        <div class="col-md-3 col-sm-6 col-xs-12 text-center timerWrapper animated" data-orientation="fadeIn">
+                        <div class=" col-xs-6 col-sm-6 col-md-3 text-center timerWrapper animated" data-orientation="fadeIn">
                             <img src="img/facts/coffee.png" alt="ideas">
                             <h1>
                                 <span class="timer3">0</span>
@@ -368,7 +394,7 @@
                             <p>Coffee consummed</p>
                         </div>
 
-                        <div class="col-md-3 col-sm-6 col-xs-12 text-center timerWrapper animated" data-orientation="fadeIn">
+                        <div class="col-xs-6 col-sm-6 col-md-3 text-center timerWrapper animated" data-orientation="fadeIn">
                             <img src="img/facts/working.png" alt="ideas">
                             <h1>
                                 <span class="timer4">0</span>
@@ -385,68 +411,114 @@
                         <h2 class="part-title animated" data-orientation="fadeIn">Price <span class="thin">List</span></h2>
                         <div class="separator"></div>
                     </div>
-                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3">
                         <div class="price-box-content">
-                            <div class="ribbon ribbon__left-top"><span>Livré en 15 jours</span></div>
-                            <h3>Basique</h3>
+                            <div class="ribbon ribbon__left-top"><span>Delivered in 15 days</span></div>
+                            <h3>Basic</h3>
+                            <h4 class="prices-option">Included:</h4>
                             <ul>
                                 <li>3 pages</li>
-                                <li>Formulaire de contact</li>
-                                <li>Hebergement non inclus * </li>
+                                <li>Contact form</li>
+                                <li>Search Engine Optimization</li>
+                                <li class="not-included">Hosting not included * </li>                        
                             </ul>
-                            <h4>In option</h4>
+                            <h4 class="prices-option">Options:</h4>
                             <ul>
-                                <li>3 pages</li>
-                                <li>Formulaire de contact</li>
-                                <li>Hebergement non inclus * </li>
+                                <li>Animations</li>
+                                <li>Responsive</li>
+                                <li>Social media optimization</li>
                             </ul>
 
                             <div class="ribbon-st">
-                                <h4>À partir de 900</h4>
+                                <h4>Starting at 900€</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3">
                         <div class="price-box-content">
-                            <div class="ribbon ribbon__left-top"><span>Livré en 30 jours</span></div>
-                            <h3>Basique</h3>
-                            <ul>
-                                <li>3 pages</li>
-                                <li>Formulaire de contact</li>
-                                <li>Hebergement non inclus * </li>                        
-                            </ul>
-                            <div class="ribbon-st">
-                                <h4>À partir de 900</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
-                        <div class="price-box-content">
+                            <div class="ribbon ribbon__left-top"><span>Delivered in 30 days</span></div>
                             <h3>Standard</h3>
+                            <h4 class="prices-option">Included:</h4>
                             <ul>
-                                <li>3 pages</li>
-                                <li>Formulaire de contact</li>
-                                <li>Hebergement non inclus * </li>
+                                <li>6 pages and more</li>
+                                <li>Contact form</li>
+                                <li>Search Engine Optimization</li>
+                                <li>Animations</li>
+                                <li>UX-UI Custom desgin</li>
+                                <li>Social media optimization</li>
+                                <li class="not-included">Hosting not included * </li>                        
+                            </ul>
+                            <h4 class="prices-option">Options:</h4>
+                            <ul>
+                                <li>Responsive</li>
+                                <li>Back office</li>
+                                <li>Newsletter</li>
+                            </ul>
+                            <div class="ribbon-st">
+                                <h4>Starting at 1500€</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3">
+                        <div class="price-box-content">
+                            <h3>Custom</h3>
+                            <ul>
+                                <li>E-shop</li>
+                                <li>Blog</li>
+                                <li>Personal project</li>
+                                <li>Unique design</li>
+                                <li>Specials ideas</li>
+                                <li>...</li>
+                                <h4><a class="scrollTo btn" href="#contact">Write me</a></h4>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-box col-xs-12 col-sm-6 col-md-3">
+                        <div class="price-box-content">
+                            <h3>Freelance</h3>
+                            <ul class="freelance">
+                                <li>HTML5 / Css - Sass - Scss</li>
+                                <ul>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                </ul>
+                                <li>Responsive Design</li>
+                                <ul>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                </ul>
+                                <li>Javascript - JQuery</li>
+                                <ul>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                </ul>
+                                <li>PHP</li>
+                                <ul>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+
+                                </ul>
 
                                 <div class="ribbon-st">
-                                    <h4>À partir de 900</h4>
+                                    <h4>300€/Day</h4>
                                 </div>
                             </ul>
                         </div>
                     </div>
-                    <div class="price-box col-xs-12 col-sm-6 col-md-3 animated" data-orientation="fadeInUp">
-                        <div class="price-box-content">
-                            <h3>Personalisé</h3>
-                            <ul>
-                                <li>3 pages</li>
-                                <li>Formulaire de contact</li>
-                                <li>Hebergement non inclus * </li>
-
-                                <div class="ribbon-st">
-                                    <h4>À partir de 900</h4>
-                                </div>
-                            </ul>
-                        </div>
+                    <div class="col-xs-12 animated" data-orientation="fadeIn">
+                        *: l'hebergement peut etre a la charge du client
                     </div>
                 </div>
             </div>
@@ -464,13 +536,18 @@
 
                 <div id="portfolio-block">
                     <div class="example">
-                        <figure class="item item-w2 item-h3 community animated" data-orientation="fadeIn">
+                        <figure class="item item-w2 item-h2 cafe-lomi animated" data-orientation="fadeIn">
                             <figcaption>
-                                <div class="project-title"><span class="thin blue">Altitude</span> Community</div>
-                                <p>Share your world. Make connections. Gain Altitude.</p>
-                                <div class="project-button"><a href="https://altitude-community.aircanada.com/" target="blank" class="btn">View it</a></div>
+                                <div class="project-title"><span class="thin blue">Café Lomi</span><br/> Artisan torréfacteur</div>
+                                <div class="project-button"><a href="http://cafelomi.com" target="blank" class="btn">View it</a></div>
                             </figcaption>
-                        </figure>
+                        </figure>   
+                        <figure class="item item-w1 item-h2 over-graph animated" data-orientation="fadeIn">
+                            <figcaption>
+                                <div class="project-title"><span class="thin blue">Over</span>-Graph</div>
+                                <div class="project-button"><a href="http://over-graph.com" target="blank" class="btn">View it</a></div>
+                            </figcaption>
+                        </figure>                    
                         <figure class="item item-w1 item-h2 investor-group animated"  data-orientation="fadeIn">
                             <figcaption>
                                 <div class="project-title"><span class="thin blue">Private client</span><br/> investor group</div>
@@ -481,6 +558,12 @@
                             <figcaption>
                                 <div class="project-title"><span class="thin blue">Canada's best new</span><br/>restaurants</div>
                                 <div class="project-button"><a href="http://enroute.aircanada.com/canadas-best-new-restaurants-2014/" target="blank" class="btn">View it</a></div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item item-w2 item-h3 community animated" data-orientation="fadeIn">
+                            <figcaption>
+                                <div class="project-title"><span class="thin blue">Altitude</span> Community</div>
+                                <div class="project-button"><a href="https://altitude-community.aircanada.com/" target="blank" class="btn">View it</a></div>
                             </figcaption>
                         </figure>
                         <figure class="item item-w2 item-h2 animated maison" data-orientation="fadeIn">
@@ -503,7 +586,7 @@
                                 <div class="project-button"><a href="http://spafax.com" target="blank" class="btn">View it</a></div>
                             </figcaption>
                         </figure>
-                        <figure class="item item-w1 item-h2 animated filmfest14"  data-orientation="fadeIn">
+                        <figure class="item item-w1 item-h3 animated filmfest14"  data-orientation="fadeIn">
                             <figcaption>
                                 <div class="project-title"><span class="thin blue">enRoute film</span><br/>festival 2014</div>
                                 <div class="project-button"><a href="http://enroute.aircanada.com/en/film-festival" target="blank" class="btn">View it</a></div>
@@ -523,7 +606,7 @@
                         </figure>   
                         <figure class="item item-w1 item-h2 animated claudemauffette"  data-orientation="fadeIn">
                             <figcaption>
-                                <div class="project-title"><span class="thin blue">Industrial</span> Designer</div>
+                                <div class="project-title"><span class="thin blue">Industrial</span><br/> Designer</div>
                                 <div class="project-button"><a href="http://claudemauffette.com" target="blank" class="btn">View it</a></div>
                             </figcaption>
                         </figure>                              
@@ -537,33 +620,54 @@
                         <h2 class="part-title animated" data-orientation="fadeIn"><span class="thin">My</span> clients</h2>
                         <div class="separator"></div>
                     </div>
-                     <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInLeft">
+
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInLeft">
+                       <a href="http://www.chevignon.com/" target="_blank"><img src="img/logos/chevignon.png" alt="Chevignon logo"></a>
+                    </div>
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInDown">
+                       <a href="http://www.wedostudios.fr" target="_blank"><img src="img/logos/wedostudio.png" alt="wedo studio logo"></a>
+                    </div>
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInRight">
+                       <a href="http://www.misterbingbang.com" target="_blank"><img src="img/logos/misterbigbang.png" alt="misterbigbang logo"></a>
+                    </div>
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInLeft">
+                       <a href="http://www.adeliegestion.fr" target="_blank"><img src="img/logos/adelie.png" alt="adelie gestion logo"></a>
+                    </div>
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInDown">
                        <a href="http://over-graph.com" target="_blank"><img src="img/logos/over-graph.png" alt="over-graph logo"></a>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInDown">
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInRight">
                         <a href="http://909c.fr" target="_blank"><img src="img/logos/909c.png" alt="909c logo"></a>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInRight">
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInLeft">
                         <a href="http://spafax.com" target="_blank"><img src="img/logos/spafax.png" alt="Spafax logo"></a>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInLeft">
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInDown">
                         <a href="http://enroute.aircanada.com" target="_blank"><img src="img/logos/enroute.png" alt="enRoute logo"></a>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInDown">
+                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInRight">
                         <a href="http://bombardier.com" target="_blank"><img src="img/logos/bombardier.png" alt="Bombardier logo"></a>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInRight">
-                        <a href="http://enroute.aircanada.com/ge-chefseries/" target="_blank"><img src="img/logos/monogram.png" alt="Ge Monogram logo"></a>
+
+                    <div class="more-clients">
+                        <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInLeft">
+                            <a href="http://enroute.aircanada.com/ge-chefseries/" target="_blank"><img src="img/logos/monogram.png" alt="Ge Monogram logo"></a>
+                        </div>
+                        <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInDown">
+                            <a href="http://apex.aero/" target="_blank"><img src="img/logos/apex.png" alt="APEX logo"></a>
+                        </div>
+                        <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInRight">
+                            <a href="http://claudemauffette.com" target="_blank"><img src="img/logos/mauffette.png" alt="Claude Mauffette logo"></a>
+                        </div>
+                        <div class="logo col-xs-12 animated" data-orientation="fadeInLeft">
+                            <a href="http://maison-en-espagne.fr" target="_blank"><img src="img/logos/maison.png" alt="Maison en espagne logo"></a>
+                        </div>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInLeft">
-                        <a href="http://apex.aero/" target="_blank"><img src="img/logos/apex.png" alt="APEX logo"></a>
+
+                    <div class="logo col-xs-12 animated" data-orientation="fadeIn">
+                        <a class="btn show-more-clients">show more</a>
                     </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInDown">
-                        <a href="http://claudemauffette.com" target="_blank"><img src="img/logos/mauffette.png" alt="Claude Mauffette logo"></a>
-                    </div>
-                    <div class="logo col-xs-12 col-sm-6 col-md-4 animated" data-orientation="fadeInRight">
-                        <a href="http://maison-en-espagne.fr" target="_blank"><img src="img/logos/maison.png" alt="Maison en espagne logo"></a>
-                    </div>
+                
                 </div>
             </div>
 
@@ -718,13 +822,22 @@
                     </div>
                 </div>
                 <footer>
-                    <img src="img/logo.png" class="logo" alt="Logo Hello-Users">
-                    <p>HELLO <span class="blue">USERS</span> | All Rights Reserved © 2015</p>
+                    <img src="img/assets/logo.png" class="logo" alt="Logo Hello-Users">
+                    <p>HELLO <span class="blue">USERS</span> <span class="thin">!</span></p>
                     <a href="https://www.linkedin.com/profile/view?id=302779683" target="blank"><img src="img/footer/linkedin.png" alt="linkedin"></a>
-                    <a href="https://www.facebook.com/pages/Hello-users/1569401276676593" target="blank"><img src="img/footer/facebook.png" alt="facebook"></a>
+                    <a href="https://www.facebook.com/hell0.users/" target="blank"><img src="img/footer/facebook.png" alt="facebook"></a>
                     <a href="https://plus.google.com/112960872940467893500" target="blank"><img src="img/footer/googleplus.png" alt="googleplus"></a>
                     <a href="https://github.com/Stankerne" target="blank"><img src="img/footer/github.png" alt="github"></a>
                     <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fhello-users.com%2F" target="blank"><img src="img/footer/w3c.png" alt="w3c"></a>
+
+                    <br/>
+
+                    <div class="fb-like" data-href="https://www.facebook.com/hell0.users/" data-layout="button_count" data-show-faces="false"></div>
+                        &nbsp;
+                    <div class="fb-share-button" data-href="http://hello-users.com" data-layout="button"></div>
+
+                    <p>Designed & Developed by Stanislas Kerné with ♡ <br/>| &nbsp;&nbsp; All Rights Reserved © 2015 &nbsp;&nbsp; |</p>
+                    </footer>
                 </footer>
             </div>
              <?php

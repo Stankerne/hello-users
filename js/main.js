@@ -37,17 +37,28 @@ else{
         $('.menu.fullpage .categories > li a').removeClass('is-active');
         $('.menu.fullpage #menu-services a').addClass('is-active');
     }, { offset: 250 });
-    $('#portfolio').waypoint(function() {
+    $('#text-separator-timers').waypoint(function() {
+        $('#hamburger-icon .line').css('background', '#ecf0f1');
+    }, { offset: 250 });
+    $('#prices').waypoint(function() {
         $('.menu.fullpage .categories > li a').removeClass('is-active');
         $('.menu.fullpage #menu-portfolio a').addClass('is-active');
+        $('#hamburger-icon .line').css('background', '#00debc');
+    }, { offset: 250 });
+    $('#portfolio').waypoint(function() {
+        $('.menu.fullpage .categories > li a').removeClass('is-active');
+        $('.menu.fullpage #menu-clients a').addClass('is-active');
+        $('#hamburger-icon .line').css('background', '#ecf0f1');
     }, { offset: 250 });
     $('#clients').waypoint(function() {
         $('.menu.fullpage .categories > li a').removeClass('is-active');
         $('.menu.fullpage #menu-clients a').addClass('is-active');
+        $('#hamburger-icon .line').css('background', '#00debc');
     }, { offset: 250 });
     $('#aboutme').waypoint(function() {
         $('.menu.fullpage .categories > li a').removeClass('is-active');
         $('.menu.fullpage #menu-about a').addClass('is-active');
+        $('#hamburger-icon .line').css('background', '#ecf0f1');
     }, { offset: 250 });
     $('#contact').waypoint(function() {
         $('.menu.fullpage .categories > li a').removeClass('is-active');
@@ -58,7 +69,7 @@ else{
     $('.animated').waypoint(function() {
         var orientation = $(this).attr('data-orientation');
         $(this).addClass(orientation);
-    }, { offset: 'bottom-in-view' });
+    }, { offset: $(window).height() });
 }
 
 
@@ -110,7 +121,6 @@ $(".menu .categories li a").click(function () {
     $('body').removeClass('deactivate')
     $(".menu").delay(1400).fadeOut();
     $(".menu .categories li a").removeClass("is-active");
-    $(this).delay(200).addClass( "is-active" );
     $('#hamburger-icon').delay(1000).toggleClass('active');
     if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         setTimeout(function () {
@@ -131,8 +141,8 @@ owl.owlCarousel({
         [0, 2],
         [450, 3],
         [600, 4],
-        [700, 5],
-        [1000, 8],
+        [750, 5],
+        [1200, 8],
     ],
     navigation : true
 });
@@ -157,6 +167,17 @@ $('#services-choices').find('.scrollTo').click(function(){
         $(this).children(".active").show();
 })
 
+$(".show-more-clients").click(function () {
+    $('.more-clients').slideToggle()
+    $(this).text(function(i, v){
+        if ($(this).hasClass('fr')) {
+            return v === 'plus' ? 'moins' : 'plus'
+        }
+        else{
+            return v === 'show more' ? 'show less' : 'show more'
+        }
+    });
+});
 
 $("#error, #success").click(function () {
     $(this).fadeOut();
