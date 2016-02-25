@@ -178,6 +178,15 @@ $(".show-more-clients").click(function () {
         }
     });
 });
+$(".timeline li .flag").click(function () {
+    $(this).parents('li').find('.desc').slideToggle()
+});
+
+$(".timeline li.date.2014").click(function () {
+    $(this).parents('.timeline').find('li.2014:not(.date)').slideToggle()
+});
+
+
 
 $("#error, #success").click(function () {
     $(this).fadeOut();
@@ -270,6 +279,8 @@ $('#text-separator-timers').waypoint(function() {
 }(jQuery));
 
 new WOW().init();
+
+
 
 (function() {
     var lastTime = 0;

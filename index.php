@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello users ! Web development & creative design </title>
+        <title>Hello users! Web development & creative design </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="Content-Language" content="en">
         <meta name="Description" content="I'm Stan, a junior web developer in freelance offering website development services that include website development, custom programming, web hosting, SEO and more.">
@@ -68,7 +68,7 @@
                 <ul class="categories">
                     <li id="menu-home"><a class="is-active scrollTo" href="#intro"><span class="text">Home</span></a></li>
                     <li id="menu-services"><a class="scrollTo" href="#welcome"><span class="text">Services</span></a></li>
-                    <li id="menu-portfolio"><a class="scrollTo" href="#prices"><span class="text">Prices</span></a></li>
+                    <li id="menu-prices"><a class="scrollTo" href="#prices"><span class="text">Prices</span></a></li>
                     <li id="menu-portfolio"><a class="scrollTo" href="#portfolio"><span class="text">Portfolio</span></a></li>
                     <li id="menu-clients"><a class="scrollTo" href="#clients"><span class="text">Clients</span></a></li>
                     <li id="menu-about"><a class="scrollTo" href="#aboutme"><span class="text">About me</span></a></li>
@@ -536,13 +536,20 @@
 
                 <div id="portfolio-block">
                     <div class="example">
-                        <figure class="item item-w2 item-h2 cafe-lomi animated" data-orientation="fadeIn">
+                        
+                        <figure class="item item-w2 item-h2 cotefoot animated" data-orientation="fadeIn">
+                            <figcaption>
+                                <div class="project-title"><span class="thin blue">ON A TOUS UN</span><br/>CÔTÉ FOOT</div>
+                                <div class="project-button"><a href="https://www.onatousuncotefoot.fr" target="blank" class="btn">View it</a></div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item item-w1 item-h2 cafe-lomi animated" data-orientation="fadeIn">
                             <figcaption>
                                 <div class="project-title"><span class="thin blue">Café Lomi</span><br/> Artisan torréfacteur</div>
                                 <div class="project-button"><a href="http://cafelomi.com" target="blank" class="btn">View it</a></div>
                             </figcaption>
                         </figure>   
-                        <figure class="item item-w1 item-h2 over-graph animated" data-orientation="fadeIn">
+                        <figure class="item item-w2 item-h3 over-graph animated" data-orientation="fadeIn">
                             <figcaption>
                                 <div class="project-title"><span class="thin blue">Over</span>-Graph</div>
                                 <div class="project-button"><a href="http://over-graph.com" target="blank" class="btn">View it</a></div>
@@ -554,7 +561,7 @@
                                 <div class="project-button"><a href="#" class="btn">View it</a></div>
                             </figcaption>
                         </figure>
-                        <figure class="item item-w2 item-h3 newrestaurants animated" data-orientation="fadeIn">
+                        <figure class="item item-w2 item-h2 newrestaurants animated" data-orientation="fadeIn">
                             <figcaption>
                                 <div class="project-title"><span class="thin blue">Canada's best new</span><br/>restaurants</div>
                                 <div class="project-button"><a href="http://enroute.aircanada.com/canadas-best-new-restaurants-2014/" target="blank" class="btn">View it</a></div>
@@ -677,76 +684,87 @@
                         <h2 class="part-title animated" data-orientation="fadeIn">About <span class="thin">me</span></h2>
                         <div class="separator"></div>
                     </div>
-                    <div class="col-xs-12 animated" data-orientation="fadeInUp">
-                        <p>
-                            My name is Stan, I come from Le Havre in Normandy, France.
-                            I studied at SUPINFO Institute of Information Technology. My school, initially only French, delivers a qualification certified by the French State at the highest level, I (level: Bac+5, Engineer, Master). SUPINFO is a worldwide IT school, leader in France, which can be found on many SUPINFO International University campuses throughout the world (France, Canada, the United Kingdom, Morocco, the United States, China, etc.).
-                        </p>
-                        <p>Every student can benefit from the possibility of mobility offered by the international network.</p>
-                        <p>
-                            That why I lived in Caen for my first study year. I completed my second and third year in Montreal then, I moved to China for one year. I finished my last school year at Montreal. I just came back to France and I'm now looking for jobs in Paris.
-                        </p>
+                    <div class="col-xs-12">
+                        <!-- The Timeline -->
+                        <div class="logo-timeline">
+                            <img src="img/logo-signature.png" class="logo" alt="Logo Hello-Users">
+                        </div>
+                        <ul class="timeline">
+                            
+                            <li class="date 2015"><span>2015</span></li>
+
+                            <!-- Item 1 -->
+                            <li>
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">Freelancer</span>
+                                        <span class="time-wrapper"><span class="time">Paris</span></span>
+                                    </div>
+                                    <div class="desc">November 2015 - present I created HELLO USERS ! and I work for it since </div>
+                                </div>
+                            </li>
+                          
+                            <!-- Item 2 -->
+                            <li>
+                                <div class="direction-l">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">909c</span>
+                                        <span class="time-wrapper"><span class="time">September - Novembre 2015</span></span>
+                                    </div>
+                                    <div class="desc">909c, agence Social Media, conçoit et met en place des stratégies de communication de Marque dans une logique d'innovation et de performance autour des différentes API des réseaux sociaux. </div>
+                                </div>
+                            </li>
+
+                            <!-- Item 3 -->
+                            <li>
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">OVER-GRAPH</span>
+                                        <span class="time-wrapper"><span class="time">April - September 2015</span></span>
+                                    </div>
+                                    <div class="desc">Over-Graph is a Social Media Marketing Solution, created to help and ease community management. Publish content to your Facebook & Twitter communities. Respond to your communities' interactions. Analyze your SocialProfiles' activity and find who's the most engage with your content.</div>
+                                </div>
+                            </li>
+
+                            <li class="date 2014"><span>2014</span></li>
+
+                            <!-- Item 4 -->
+                            <li class="2014">
+                                <div class="direction-l">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">SPAFAX</span>
+                                        <span class="time-wrapper"><span class="time">April 2014 - February 2015</span></span>
+                                    </div>
+                                    <div class="desc">Spafax create engaging and entertaining media products across all channels that help brands and customers converse and connect. Spafax is specialize in marketing, entertaining and communicating with the global transumer — the consumer in transit.</div>
+                                </div>
+                            </li>
+                            <!-- Item 3 -->
+
+                            <li class="2014">
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">Master 2</span>
+                                        <span class="time-wrapper"><span class="time">April - February 2015</span></span>
+                                    </div>
+                                    <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                                </div>
+                            </li>
+                            <!-- Item 3 -->
+                            <li class="2014">
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">SPAFAX</span>
+                                        <span class="time-wrapper"><span class="time"> - February 2015</span></span>
+                                    </div>
+                                    <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div id="cities">
-                <ul class="ch-grid animated" data-orientation="fadeInUp">
-                    <li>
-                        <div class="ch-item">   
-                            <div class="ch-info lh">
-                                <h3>Le Havre</h3>
-                                <p>Where I<br>come<br>from</p>
-                            </div>
-                            <div class="ch-thumb lh" onclick="return true"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">   
-                            <div class="ch-info caen">
-                                <h3>Caen</h3>
-                                <p>2009<br>↓<br>2010</p>
-                            </div>
-                            <div class="ch-thumb caen" onclick="return true"></div>
-                        </div>
-                    </li>                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info mtl0">
-                                <h3>Montréal</h3>
-                                <p>2010<br>↓<br>2012</p>
-                            </div>
-                            <div class="ch-thumb mtl0" onclick="return true"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info tianjin">
-                                <h3>Tianjin</h3>
-                                <p>2012<br>↓<br>2013</p>
-                            </div>
-                            <div class="ch-thumb tianjin" onclick="return true"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info mtl1">
-                                <h3>Montréal</h3>
-                                <p>2013<br>↓<br>2015</p> <!--<a href="#">Link to ...</a> -->
-                            </div>
-                            <div class="ch-thumb mtl1" onclick="return true"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">   
-                            <div class="ch-info paris">
-                                <h3>Paris</h3>
-                                <p>2015<br>↓<br>...</p>
-                            </div>
-                            <div class="ch-thumb paris" onclick="return true"></div>
-                        </div>
-                    </li>                
-                </ul>
-            </div>
 
             <div id="contact-button">
                 <div class="container">
@@ -783,7 +801,7 @@
                             </div>
                             <div class="method">
                                 <div class="label">A</div>
-                                <div class="details">97 rue Manin<br>75019 Paris<br>FRANCE</div>
+                                <div class="details">45&nbsp;rue&nbsp;Boussingault<br>75013 Paris<br>FRANCE</div>
                             </div>
                         </div>
                     </div>
@@ -827,7 +845,7 @@
                     <a href="https://www.linkedin.com/profile/view?id=302779683" target="blank"><img src="img/footer/linkedin.png" alt="linkedin"></a>
                     <a href="https://www.facebook.com/hell0.users/" target="blank"><img src="img/footer/facebook.png" alt="facebook"></a>
                     <a href="https://plus.google.com/112960872940467893500" target="blank"><img src="img/footer/googleplus.png" alt="googleplus"></a>
-                    <a href="https://github.com/Stankerne" target="blank"><img src="img/footer/github.png" alt="github"></a>
+                    <a href="https://github.com/Stankerne/hello-users" target="blank"><img src="img/footer/github.png" alt="github"></a>
                     <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fhello-users.com%2F" target="blank"><img src="img/footer/w3c.png" alt="w3c"></a>
 
                     <br/>
@@ -836,7 +854,7 @@
                         &nbsp;
                     <div class="fb-share-button" data-href="http://hello-users.com" data-layout="button"></div>
 
-                    <p>Designed & Developed by Stanislas Kerné with ♡ <br/>| &nbsp;&nbsp; All Rights Reserved © 2015 &nbsp;&nbsp; |</p>
+                    <p>Designed & Developed by Stanislas Kerné with ♡ <br/>| &nbsp;&nbsp; All Rights Reserved © 2016 &nbsp;&nbsp; |</p>
                     </footer>
                 </footer>
             </div>
